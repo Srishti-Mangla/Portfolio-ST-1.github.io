@@ -1,0 +1,430 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0px;
+    background-color: rgba(0, 0, 0, 0.968);
+    color: white;
+}
+
+/* Marquee-Section */
+marquee{
+    color:white;
+    font-size: 20px;
+    position: fixed;
+    top:0px;
+    z-index: 100;
+    background-color: black;
+}
+marquee a{
+    color: white;
+    text-decoration: none;
+    animation: culur 2s infinite;
+}
+@keyframes culur{
+    0%{
+        font-size: 22px;
+        color:white;
+        transition: ease-in-out;
+    }
+    20%{
+        font-size: 22px;
+        color:gold;
+        transition: ease-in-out;
+    }
+    40%{
+        font-size: 22px;
+        color:white;
+        transition: ease-in-out;
+    }
+    60%{
+        font-size: 22px;
+        color:gold;
+        transition: ease-in-out;
+    }
+    80%{
+        font-size: 22px;
+        color:white;
+        transition: ease-in-out;
+    }
+    100%{
+        font-size: 22px;
+        color:gold;
+        transition: ease-in-out;
+    }
+}
+
+/* Back-to-Top-Button-Section */
+#toTop{
+    position: fixed;
+    bottom:20px;
+    right:30px;
+    z-index: 99;
+    background-color: gold;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 45px;
+    height:50px;
+    width:50px;
+    text-align: center;
+}
+
+/* Home-Section */
+#Home nav ul{
+    margin-top: 50px;
+    text-align: center;
+    font-family: sans-serif;
+}
+#Home nav ul li{
+    list-style: none;
+    padding-left: 0px;
+    display: inline-block;
+    margin: 0px 20px 0px;
+    font-weight: 550;
+    font-size: x-large;
+}
+#Home nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+#Home nav ul li a:hover{
+    font-size: 24.3px;
+    color: rgb(239, 236, 236);
+    border-bottom: 1px solid rgba(223, 162, 8, 0.877);
+}
+#Home img{
+    display: block;
+    margin:auto;
+    margin-top: 100px;
+    box-shadow: 0px 0px 5px 2.5px rgba(253, 225, 67, 0.74);
+}
+#Home h2{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 30px;
+    color: whitesmoke;
+}
+#show:after{
+    content:" ";
+    animation: animate 4.5s infinite;
+    transition: ease-in-out;
+}
+@keyframes animate{
+    0%{
+        content:"Dreams : Plan for life";
+    }
+    50%{
+        content:"Your Today, Decides your Tomorrow";
+    }
+    100%{
+        content:"Failure proves your Courage to Try";
+    }
+}
+#Home p{
+    margin:50px 250px 50px;
+    text-align:center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+}
+#Home p span{
+    font-weight: 600;
+}
+#Home button{
+    display: block;
+    margin:auto;
+    padding:10px;
+    font-size: 35px;
+    box-shadow: 0px 0px 5px 2.5px white;
+    background-color: rgba(0, 0, 0, 0.968);
+    color: white;
+    border-radius: 15px;
+}
+#Home button a{
+    text-decoration: none;
+    color: white;
+}
+
+/* About-Section */
+#About img{
+    padding: 10px;
+    height:400px;
+    width:400px;
+    border-radius: 10%;
+    margin:200px;
+    margin-left:260px;
+    border-style: double;
+}
+#About span{
+    position: absolute;
+    top: 700px;
+    left:570px;
+    margin:200px;
+    font-size: 30px;
+}
+
+/* Skill-Section */
+#Skills h1{
+    text-align: center;
+}
+#Skills h1 span{
+    font-size: 55px;
+    border-bottom: 2px solid gold;
+}
+.skill{
+    display: inline-block;
+    border:2px solid white;
+    width:120px;
+    height:30px;
+    text-align: center;
+    font-size: 22.5px;
+    border-radius: 50px;
+    margin:50px;
+    margin-left: 180px;
+}
+.skill:hover{
+    width:150px;
+    height: 40px;
+    font-size: 32.5px;
+    transition: 1s ease-in-out;
+}
+#HTML:hover{
+    background: linear-gradient(to right, gold 90%, rgba(0, 0, 0, 0.968) 10%);
+}
+#CSS:hover{
+    background: linear-gradient(to right, gold 85%, rgba(0, 0, 0, 0.968) 15%);
+}
+#JS:hover{
+    background: linear-gradient(to right, gold 50%, rgba(0, 0, 0, 0.968) 50%);
+}
+#C:hover{
+    background: linear-gradient(to right, gold 85%, rgba(0, 0, 0, 0.968) 15%);
+}
+#CPP:hover{
+    background: linear-gradient(to right, gold 95%, rgba(0, 0, 0, 0.968) 5%);
+}
+#JAVA:hover{
+    background: linear-gradient(to right, gold 90%, rgba(0, 0, 0, 0.968) 10%);
+}
+#PYTHON:hover{
+    background: linear-gradient(to right, gold 80%, rgba(0, 0, 0, 0.968) 20%);
+}
+#DSA:hover{
+    background: linear-gradient(to right, gold 70%, rgba(0, 0, 0, 0.968) 30%);
+}
+#DBMS:hover{
+    background: linear-gradient(to right, gold 80%, rgba(0, 0, 0, 0.968) 20%);
+}
+#LINUX:hover{
+    background: linear-gradient(to right, gold 70%, rgba(0, 0, 0, 0.968) 30%);
+}
+#IOT:hover{
+    background: linear-gradient(to right, gold 80%, rgba(0, 0, 0, 0.968) 20%);
+}
+#CN:hover{
+    background: linear-gradient(to right, gold 75%, rgba(0, 0, 0, 0.968) 25%);
+}
+
+/* Portfolio-Section */
+#Portfolio{
+    margin-top:200px;
+}
+#Portfolio h1{
+    text-align: center;
+}
+#Portfolio h1 span{
+    font-size: 55px;
+    border-bottom: 2px solid gold;
+}
+#Portfolio div{
+    display: inline-block;
+    margin-left: 18%;
+}
+fieldset{
+    border-radius:30px;
+    border-bottom: none;
+    display:inline-block;
+    background-image: url(Images/back.jpg);
+}
+fieldset legend{
+    text-align: center;
+}
+fieldset h2{
+    font-size: xx-large;
+    border-bottom: 2px solid gold;
+}
+#Education{
+    width: 210px;
+    position: absolute;
+    left: 50px;
+}
+#Education p{
+    font-size: 25px;
+}
+#Projects{
+    position: absolute;
+    left: 320px;
+    height:560px;
+}
+#Projects img{
+    height: 400px;
+    width: 400px;
+    padding: 10px;
+}
+#Projects img:hover{
+    box-shadow: 0px 0px 5px 2.5px gold;
+    border-radius: 7%;
+    transition: 0.5s ease-in-out;
+}
+#Projects span{
+    font-size: 30px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0px 0px 5px 3px gold;
+
+}
+#Projects #s1{
+    position: absolute;
+    left:140px;
+    top:415px;
+}
+#Projects #s2{
+    position: absolute;
+    left:590px;
+    top:405px;
+}
+#Certificate{
+    width: 215px;
+    position: absolute;
+    right:50px;
+}
+#Certificate p{
+    font-size: 25px;
+}
+
+/* Contact-Section */
+#Contact{
+    margin-top: 800px;
+}
+#Contact h1{
+    text-align: center;
+}
+#Contact h1 span{
+    font-size: 55px;
+    border-bottom: 2px solid gold;
+}
+#contact {
+    color: white;
+    padding-bottom: 40px;
+}
+#contact h1, #contact h1 span {
+    color: white;
+}
+#contact-form {
+    margin-left: 20%;
+}
+#contact-container {
+    display: flex;
+    margin:100px;
+}
+#my-details-container {
+    width: 35%;
+    margin-left: 6%;
+}
+#my-details-container h3 {
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+#contact-form-container {
+    width: 50%;
+}
+#my-details-container p {
+    color: #d9dcdd;
+    font-size: 0.9rem;
+}
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+}
+.my-details-info-container span {
+    margin-left: 0.4rem;
+    font-size: 0.95rem;
+}
+.my-details-info-container i {
+    color: white;
+}
+.my-details-icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+}
+#contact-form input, textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: var(--contact-light-text-color);
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+#contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+#contact-form button:hover {
+    background: black;
+}
+#contact .social-icons li a i {
+    font-size: 1.2rem;
+    margin: 40px 10px 10px;
+    padding: 10px 14px 20px 10px;
+}
+input:focus,select:focus,textarea:focus,button:focus {
+    outline: none;
+}
+.text-center {
+    text-align: center;
+    font-size: xx-large;
+}
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+.social-icons li a i {
+    padding: 10px;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}

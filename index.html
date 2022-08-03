@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+        <link rel="shortcut icon" href="Images/logo.png" type="image/X-icon">
+        <title>Srishti Mangla</title>
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <marquee behavior="scroll" direction="right"><a href="Images/Resume.pdf" download>Click here</a> to download Resume.</marquee>
+
+        <!-- Back-to-Top-Button-Section -->
+        <i type="button" id = "toTop" class="fas fa-arrow-up" onclick="topFunction()" title="To Home"></i>
+
+        <!-- Home-Section -->
+        <div id="Home">
+            <nav>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="Images/Resume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="Images/logo.png" style="border-radius:100%">
+            <h2 id="show"></h2>
+            <p>Hey! I <span>Srishti Mangla</span> welcomes you on the board of my career qualification. Hope you'll have a great time of exploring my site.</p>
+            <button><a href="#About">Start your Journey</a></button>
+        </div>
+        <!-- About-Section -->
+        <div id="About">
+            <img src="Images/pic.png">
+            <span>A college student pursuing Bachelor's of Engineering in the field of Computer Science and Engineering from Chitkara University. Completed 2 years of graduation with CGPA 10 and had gained a lot of experience and confidence by creating projects. Seeking for exciting web development projects.</span>
+        </div>
+        <!-- Skills-Section -->
+        <div id="Skills">
+            <h1>
+                <span><i class="fas fa-chalkboard-teacher"></i>
+                Skills</span>
+            </h1>
+            <div class="skill" id="HTML" title="90%">HTML</div>
+            <div class="skill" id="CSS" title="85%">CSS</div>
+            <div class="skill" id="JS" title="50%">JS</div>
+            <div class="skill" id="C" title="85%">C</div>
+            <div class="skill" id="CPP" title="95%">C++</div>
+            <div class="skill" id="JAVA" title="90%">Java</div>
+            <div class="skill" id="PYTHON" title="80%">Python</div>
+            <div class="skill" id="DSA" title="70%">DSA</div>
+            <div class="skill" id="DBMS" title="80%">DBMS</div>
+            <div class="skill" id="LINUX" title="70%">Linux</div>
+            <div class="skill" id="IOT" title="80%">IoT</div>
+            <div class="skill" id="CN" title="75%">CN</div>
+        </div>
+        <!-- Portfolio-Section -->
+        <div id="Portfolio">
+            <h1>
+                <span><i class="fas fa-th-list"></i>
+                Portfolio</span>
+            </h1>
+            <fieldset id="Education">
+                <legend><h2>Education</h2></legend>
+                <p>~ Grade 10th from VDJS, Hisar in 2018 scoring 85%</p>
+                <p>~ Grade 12th from White Leaf, Delhi in 2020 scoring 80%</p>
+                <p>~ 1st year from Chitkara University scoring CGPA 10</p>
+                <p>~ 2nd year from Chitkara University scoring CGPA 10</p>
+            </fieldset>
+            <fieldset id="Projects">
+                <legend><h2>Projects</h2></legend>
+                <img src="Images/P1.JPG">
+                <span id="s1">Gym Website</span>
+                <img src="Images/P2.PNG">
+                <span id="s2">Music Player</span>
+            </fieldset>
+            <fieldset id="Certificate">
+                <legend><h2>Certification</h2></legend>
+                <p>~ Coding Ninjas Python Course</p>
+                <p>~ Coding Ninjas Java Course</p>
+                <p>~ Coding Ninjas DSA Course</p>
+                <p>~ Coding Ninjas Web Development Course</p>
+                <p>~ Cisco Networking Academy IoT Course</p>
+            </fieldset>
+        </div>
+        <!-- Contact-Section -->
+        <div id="Contact">
+            <h1 class="section-heading mb50px">
+                <span><i class="far fa-address-card"></i>
+                Contact </span>
+            </h1>
+            <div id="contact-container">
+                <div id="contact-form-container">
+                    <form name="siteForm" id="contact-form" onsubmit="return validateForm()">
+                        <input id="input-name" name="name" type="text" placeholder="Your Name">
+                        <input id="input-email" name="email" type="text" placeholder="Your Email">
+                        <textarea id="input-message" name="message" rows="2" cols=40 placeholder="Message..."></textarea>
+                        <button class="sub-btn" type="submit">SEND MESSAGE</button>
+                    </form>
+                </div>
+                <div id="my-details-container">
+
+                    <h3> Get In touch </h3>
+                    <p>In working days(i.e Monday to Friday)<br>(Timings: 9:00 A.M. to 5 P.M.) </p>
+					<p>For Saturday and Sunday<br>(Timings: 9:00 A.M. to 1:00 p.m.) </p>
+
+                    <h3> Address </h3>
+                    <div class="my-details-info-container">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Chitkara University, Rajpura, Punjab</span>
+                    </div>
+                    <div class="my-details-info-container">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>9518043447</span>
+                    </div>
+                    <div class="my-details-info-container">
+                        <i class="far fa-envelope"></i>
+                        <span>srishti1734.be20@chitkara.edu.in</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center social-icons">
+                <ul class="horizontal-list">
+                    <li>
+                        <a href="https://www.linkedin.com/in/srishti-mangla-419887211/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://stackoverflow.com/users/19592875/srishti-mangla" target="_blank">
+                            <i class="fab fa-stack-overflow"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/mangla_srishti/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/srishti.mangla.37" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.quora.com/profile/Srishti-Mangla-1" target="_blank">
+                            <i class="fab fa-quora"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
